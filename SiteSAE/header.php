@@ -49,18 +49,26 @@ if (session_status() === PHP_SESSION_NONE) {
     <div class="icons">
         <!-- Espace Admin -->
         <div>
+            
             <?php
             if (isset($_SESSION['client_email'])) {
-                $email = isset($_SESSION['client_email']) ? $_SESSION['client_email'] : $_COOKIE['CidClient'];
-                $query = $conn->prepare("SELECT role FROM Client WHERE email = :email");
-                $query->bindParam(':email', $email);
-                $query->execute();
-                $result = $query->fetch(PDO::FETCH_ASSOC);
-                if (isset($result['role']) || $result['role'] !== null) {
-                    echo "<a href='menuAdmin.php'><button class='espaceAdmin'>Espace Admin</button></a>";
+                // On récupère l'email
+                $email = isset($_SESSION['client_email']) ? $_SESSION['client_email'] : (isset($_COOKIE['CidClient']) ? $_COOKIE['CidClient'] : '');
+                
+                if($email) {
+                    $query = $conn->prepare("SELECT role FROM Client WHERE email = :email");
+                    $query->bindParam(':email', $email);
+                    $query->execute();
+                    $result = $query->fetch(PDO::FETCH_ASSOC);
+
+                    // CORRECTION ICI : On vérifie si le rôle est strictement égal à 'admin'
+                    if ($result && $result['role'] == 'admin') {
+                        echo "<a href='menuAdmin.php'><button class='espaceAdmin'>Espace Admin</button></a>";
+                    }
                 }
             }
             ?>
+      
         </div>
 
         <!-- Icônes favorites, panier et utilisateur -->

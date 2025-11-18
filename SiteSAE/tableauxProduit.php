@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 include 'Connect.inc.php';
 use Faker\Factory;
 use Vtiful\Kernel\Format;
@@ -771,6 +771,8 @@ while ($row = $req->fetch(PDO::FETCH_ASSOC))
 
 
 
+$stock = []; 
+
 $req = $conn->prepare("SELECT * FROM Stock");
 $req->execute();
 while ($row = $req->fetch(PDO::FETCH_ASSOC))
@@ -907,15 +909,23 @@ function getproduit($Allproduit,$listeproduit)
 
 }
 
-function afficherLProduitsA($tabProduits,$reduction) {
-    echo '<table class:"table1">';
+function afficherLProduitsA($tabProduits, $reduction) {
+    echo '<table class="table1">'; // J'ai corrigé une petite faute de frappe ici (class= au lieu de class:)
     echo '<tr>';
+    
+    // On boucle 4 fois pour garder la mise en page, mais on vérifie si le produit existe
     for ($i = 0; $i < 4; $i++) {
-        echo afficherProduit($tabProduits[$i], 5,$reduction);
+        if (isset($tabProduits[$i])) {
+            // Le produit existe, on l'affiche
+            echo afficherProduit($tabProduits[$i], 5, $reduction);
+        } else {
+            // Le produit n'existe pas, on affiche une case vide pour ne pas casser le tableau
+            echo '<td></td>';
+        }
     }
+    
     echo '</tr>';
     echo '</table>';
-    
 }
 $listeCodePromo = [];
 $req = $conn->prepare("SELECT * FROM codePromotion");

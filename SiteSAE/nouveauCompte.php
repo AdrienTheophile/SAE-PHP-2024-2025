@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Compte créé avec succès!";
         header("Location: connexionCompte.php");
     } catch (PDOException $e) {
-        echo "<div class='alert alert-danger' role='alert'>Erreur lors de la création du compte. </div>";
+        echo "<div class='alert alert-danger' role='alert'>Erreur SQL : " . $e->getMessage() . "</div>";    
     }
 }
 ?>
