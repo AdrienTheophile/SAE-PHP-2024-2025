@@ -1,4 +1,4 @@
-= S3.A.01 - Développement appli (Sprint 4)
+= S3.A.01 - Développement appli
 
 :icons: font
 :models: models
@@ -62,34 +62,6 @@ Projet est réalisé par::
 - https://github.com/[Clavel Simon]
 
 
-===  Tuteurs de l'équipe:
-
-- link:https://github.com/jmbruel[Jean-Michel BRUEL]
-
-===  Langages / Technologies utilisées
-
-
-=== Dépôt initial
-
-
-
-
-TIP: Adaptez ces fichiers à votre projet et à votre organisation. Et inspirez-vous en pour en ajouter.
-
-[[liensUtiles]]
-=== Liens utiles
-
-- Le https://webetud.iut-blagnac.fr/course/view.php?
-id=841[cours Moodle] sur la SAE
-- Le dépôt https://github.com/IUT-Blagnac/
-sae3-01-template[template] qui sert de base à tous les 
-dépôts étudiants.
-- Le lien https://classroom.github.com/a/OUF7gxEa
-[classroom] si besoin.
-
-TIP: Pensez à utiliser les salons Discord dédiés pour 
-poser vos questions.
-
 == Réalisations 
 
 [cols="1,2,2,5",options=header]
@@ -98,7 +70,6 @@ poser vos questions.
 | 2021-09-20 | Document de Conception |https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/conception.adoc|
 |03-12-2024|Cahier de recette|https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/Cahier_de_Recette_G1B5.pdf|
 |03-12-2024|Documentation utilisateur|https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/documentation%20utilisateurs.adoc|
-|20-12-2024| Fiche droit| https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/Conseil_Droit.adoc|
 |18-01-2025|Release Finale de l'application et du site E-Commerce|https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/releases/tag/vfinale.0.0|
 
 |===
@@ -319,52 +290,5 @@ Un Sprint durera 2 semaines
 
 |===
 
-
-=== Gestion par Sprint
-[cols="1,1,1"]
-|===
-|Réunions sprint 1| Ordre du jour | Compte rendu
-|  |link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/ODJ_SEM45.pdf[ODJ semaine 45] |link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/CR_SEM45.pdf[CR semaine 45]
-|  |link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/ODJ_SEM46.pdf[ODJ semaine 46] |link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/CR_SEM46.pdf[CR semaine 46]
-|  |link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/ODJ_SEM47.pdf[ODJ semaine 47] |link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/CR_SEM47.pdf[CR semaine 47]
-|Réunions sprint 2| link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/ODJ_SEM48.pdf[ODJ semaine 48] | link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/CR_SEM48.pdf[CR semaine 48]
-|  | link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/ODJ_SEM49.pdf[ODJ semaine 49] | link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/CR_SEM49.pdf[CR semaine 49]
-| Réunions sprint 3 | link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/ODJ_SEM50.pdf[ODJ semaine 50] | link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/CR_SEM50.pdf[CR semaine 50]
-|  | link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/ODJ_SEM51.pdf[ODJ semaine 51] | link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/CR_SEM51.pdf[CR semaine 51]
-| Réunions POST-MORTEM | link:https://github.com/IUT-Blagnac/sae-3-01-devapp-2024-2025-g1b5/blob/master/GPO/ODJ_CR_Reunion/ODJ_POST-MORTEM.pdf[ODJ POST-MORTEM] | 
-|===
-
-==== Evaluation communication semaine 48 par EP
-Odj /CR évalués concernent la réunion de rétrospective de sprint de l'équipe, je ne l'ai pas pour la semaine 48!  J'ai évalué exceptionnellement semaine 47 à la plaçe. ODJ : Il manque qui va rédiger le compte rendu, qui est responsable de chaque rubrique (cf. exemple). CR : Il manque le plan avec les rubriques de l'ODJ, il manque le point réunion client, il manque l'analyse difficultés -réussites du sprint, il manque qui se charge de l'organisation de la prochaine réunion.
-note: 1,2/3
-
-==== Evaluation communication semaine 49 par EP
-ODJ : Attention soucis sur date du Compte rendu antérieure à la réunion ! CR: manque abs/present, il reste des fautes, analyse assez succinte, manque retour client site Web.
-note : 1,6/3
-Note Appel offre : 11,02/20
-
-==== Evaluation communication semaine 50 par EP
-ODJ OK CR: Il manque toujours les retour de la réunion client et les difficultés/réussites au niveau organisationnel. Des fautes.  
-note : 2/3
-
-==== Evaluation communication semaine 51 par EP
-Attention c'est la réunion d'équipe que je demande (retrospective de sprint ) pas celle avec le client (sprint review) même si vous devez la résumer dans le CR. Peu rédigé.Pensez à m'envoyer l'ODJ pour la semaine prochaine.
-note: 2,49/3
-
-=== Evaluation fiche droit
-
-17/20
-
-=== Voici un exemple d'évaluation :
-
-ifdef::env-github[]
-image:https://docs.google.com/spreadsheets/d/e/2PACX-1vTc3HJJ9iSI4aa2I9a567wX1AUEmgGrQsPl7tHGSAJ_Z-lzWXwYhlhcVIhh5vCJxoxHXYKjSLetP6NS/pubchart?oid=1850914734&amp;format=image[link=https://docs.google.com/spreadsheets/d/e/2PACX-1vTc3HJJ9iSI4aa2I9a567wX1AUEmgGrQsPl7tHGSAJ_Z-lzWXwYhlhcVIhh5vCJxoxHXYKjSLetP6NS/pubchart?oid=1850914734&amp;format=image]
-endif::[]
-
-ifndef::env-github[]
-++++
-<iframe width="786" height="430" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTc3HJJ9iSI4aa2I9a567wX1AUEmgGrQsPl7tHGSAJ_Z-lzWXwYhlhcVIhh5vCJxoxHXYKjSLetP6NS/pubchart?oid=1850914734&amp;format=image"></iframe>
-++++
-endif::[]
 
 
